@@ -1,0 +1,42 @@
+A szakmai gyakorlati hely bemutatása 
+
+
+A szakmai gyakorlatomat a XSAW NETWORK Informatikai Kereskedelmi és Szolgáltató Kft.-nél (3399 Andornaktálya, Dózsa György utca 3.) végeztem. A Kft. az egyedi informatikai rendszerek tervezésén, fejlesztésén, támogatásán kívül vállalati és egyéni hosting szolgáltatásokkal foglalkozik; a webfejlesztés területén a legegyszerûbb bemutatkozó oldalaktól a forgalmas híroldalakig. A mobilalkalmazás fejlesztés elsõsorban iOS-platformra történik. Fõ profiljukba tartozik az adatbázisrendszerek tervezése, kivitelezése és karbantartása. A tevékenységi paletta részét képezi az IT-tanácsadás, elsõsorban a biztonság és a jogi tanácsadás a jellemzõ. Ezen kívül még a különbözõ informatikai tanfolyamok szervezésével és lebonyolításával is foglalkozik. A cél az informatika területén a minél nagyobb lefedettség biztosítása. Itt választhattam a számtalan lehetõség közül, így egy olyan területtel ismerkedhettem meg közelebbrõl, amellyel a késõbbiekben is foglalkozni szeretnék.
+
+
+A szakmai gyakorlat ismertetése 
+
+A gyakorlatot az alapok ismétlésével, illetve megismerésével kezdtem. Mivel a verziókövetés a Git verziókövetõ rendszerrel történt, így elsõként annak magabiztos elsajátítása volt a feladat. A késõbbi feladatok alapja a Bootstrap3 keretrendszer, ezért annak alapjaival kellett megismerkednem, majd felelevenítenem a HTML5- és CSS3-ismereteimet. A következõ lépés a Photoshop-ismereteim bõvítése volt. Ezek után kapcsolódhattam be egy aktív projektbe, ahol lehetõséget kaptam egy reszponzív weboldal Phototshop-design alapján történõ elkészítésére, majd a megrendelõ kéréseinek megfelelõen módosítottam a felhasználói felületet. Az utolsó feladatom során részt vehettem a tervezésben is. A feladatokat részletesen a következõ fejezetekben ismertetem. 
+
+
+
+A feladat leírása 
+
+Egy vendégház weboldalának, grafikus felületének fejlesztése. A cél egy responsive site elkészítése. A terveknek megfelelõen kell kialakítani az egyéni navigációt, a slideshow-t, a vendégházat bemutató egységet, galériát, az egyszerû táblázatot az árakkal, a vendégkönyvet, a kapcsolatfelvételhez szükséges adatokat tartalmazó részt és egy térképet. Ezek többsége módosítva lett. Néhány esetben az eredeti és a módosított részekrõl is készítettem leírást. 
+
+A navigáció 
+A Bootstap3 keretrendszer osztályainak használatával került kialakításra, így az eredeti beállításokat a style.css fájlban módosítottam a terveknek megfelelõen. A navigációs sávban kerültek elhelyezésre a nyelvválasztást segítõ gombok is. A módosítás után egy újabb elemmel bõvült, amely egy lenyíló menüt jelenít meg, megjelenítve az oldal tartalmi elemeit; így biztosítva a könnyebb navigálást. Ez a kialakítás a késõbbi fejlesztéseknek megfelelõen bõvíthetõ.   
+
+A Slideshow 
+A Bootstap3 számos sablont tartalmaz, többek közt a slideshow-t is, amit egy úgynevezett körhintával (carousel) lehet megvalósítani. Ennek lényege, hogy az itt elhelyezett elemek (pl. képek) folyamatosan vagy bizonyos események hatására, megadott sorrendben váltsák egymást. 
+Ez az elem lett kiegészítve két további elemmel, amelyek az elõzõvel együtt jelennek meg, és a különbözõ képernyõszélességekkel együtt változnak. A méretváltozás problémáját media screen használatával oldottam meg. Az egyik elem egy gomb, ami egy online foglalási rendszerhez fogja elvezetni a felhasználót. A másik elem egy kép (logó) a bal felsõ sarokban. 
+Tagolás 
+A különbözõ részeket hasonló elemekkel tagoltam. Ezeknek az elsõ verzióban a body alapszíne volt a háttere, majd egy átúszó háttérre módosult, amit a style.css fájlban állítottam be. 
+
+Egy bemutatkozó egység
+A vendégházat bemutató részben hármas tagolást kellett megvalósítani. A három egység képének egy részlete alapértelmezetten egyszerre jelenik meg, a hozzájuk tartozó szöveg abban az esetben látható, ha az egérmutató a képek fölé áll; ilyenkor a kép tejes egészében lesz látható. A szövegek megjelenését és eltûnését egy szkript irányítja, míg a képeket CSS-animáció szabályozza. A @keyframes szabály alkalmazásával úgy tudtam meghatározni az animációt, hogy a CSS-stílusok fokozatosan változzanak meg. Az elemek rugalmasságát a flex-grow tulajdonsággal határoztam meg.   
+
+Galéria 
+A galéria a vendégház különbözõ egységeit mutatja be. Az eredeti tervek szerint három sorban jelentek meg a fotók: az elsõ sorban 3, a második sorban 2 (mind a két sorban azonos méretû képek megjelenítése volt a feladat), míg a harmadik sorban 1, a bennfoglaló elem teljes szélességében. Minden elem megjelenített egy modális ablakot, ami mindössze egy képet tartalmazott (nem volt kialakult álláspont ezek pontos tartalmáról és kinézetérõl).  
+A módosítások után a galéria képei két sorban 3-3 kép kapotak helyet egy 60%-os szürke filterrel. Az egérmozgás hatására a filter megszûnik és a kép méretei megváltoznak. Ezt az animációt szkript és CSS irányítja. 
+
+Az Áraink és az Ajánlataink 
+Az ajánlatokat tartalmazó részt 5 kép és hozzájuk tartozó felirat alkotják. A képet és a szöveget külön kezeltem, de egy div-en belül. A Csomagajánlatok kattintás hatására egy .pdf fájlt nyit meg, míg a többi elem felett egéresemény hatására egy szöveg jelenik meg és megváltozik a kép. 
+
+Kapcsolat 
+A kapcsolatokat tartalmazó rész kritériumai: 
+- a címre kattintva megjelenõ térkép,
+- aktív telefonszám,
+- e-mail-címre kattintva megnyíló levelezõprogram,
+- Facebook-oldal elérése,
+ - térkép a Vendégház pontos helyével (Google Maps). 
